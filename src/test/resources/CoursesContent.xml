@@ -1,0 +1,31 @@
+<?xml version = "1.0"?>
+
+<Items>
+<Products>
+    <State value="California" package="Competitive Edge">
+        <Sku>25aab574-7661-45b1-a0e2-1d1f6a0fc602</Sku>
+        <CoursesQuantity>3</CoursesQuantity>
+        <Price>$299.00</Price>
+    </State>
+    <State value="Florida" package="Competitive Edge">
+        <Sku>f170e56b-59d2-47e6-857b-8f443ce91539</Sku>
+        <CoursesQuantity>2</CoursesQuantity>
+        <Price>$199.00</Price>
+    </State>
+    <State value="Texas" package="Competitive Edge">
+        <Sku>eaddacd9-ea8e-48d3-a77c-8c11af9ecd44</Sku>
+        <CoursesQuantity>9</CoursesQuantity>
+        <Price>$619.00</Price>
+    </State>
+    <State value="New York" package="Exam Advantage">
+        <Sku>20376762-faff-41c4-9038-bb7462ba105a</Sku>
+        <CoursesQuantity>1</CoursesQuantity>
+        <Price>$279.00</Price>
+    </State>
+    <State value="Missouri" package="Exam Advantage">
+        <Sku>2307ed84-2cd9-4981-8802-0c59bc3e24c5</Sku>
+        <CoursesQuantity>2</CoursesQuantity>
+        <Price>$359.00</Price>
+    </State>
+</Products>
+</Items>

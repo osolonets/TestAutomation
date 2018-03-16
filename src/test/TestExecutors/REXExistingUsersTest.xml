@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- parallel="tests" thread-count="2"-->
+<suite name="REX Existing Users Test Suite" group-by-instances="true">
+    <listeners>
+        <listener class-name="Utils.Listeners.TestNGListeners.InvokedMethodListenerREX"/>
+        <listener class-name="Utils.Listeners.TestNGListeners.AnnotationTransformer"/>
+    </listeners>
+    <test name="Open courses and certificates of existing users">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="REXExistingUsersTest"/>
+        </classes>
+    </test>
+    <!--<test name="CheckingExistingUsersTest_Edge">-->
+        <!--<parameter name="browser" value="Edge"/>-->
+        <!--<classes>-->
+            <!--<class name="REXExistingUsersTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="CheckingExistingUsersTest_InternetExplorer">-->
+        <!--<parameter name="browser" value="InternetExplorer"/>-->
+        <!--<classes>-->
+            <!--<class name="REXExistingUsersTest"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+</suite>

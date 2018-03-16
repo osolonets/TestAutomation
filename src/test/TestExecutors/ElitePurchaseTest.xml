@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- parallel="tests" thread-count="2"-->
+<suite name="Elite Purchasing Test Suite" group-by-instances="true">
+    <listeners>
+        <listener class-name="Utils.Listeners.TestNGListeners.InvokedMethodListenerElite"/>
+    </listeners>
+    <test name="Purchase course/package as a new user">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="ElitePurchaseTest"/>
+        </classes>
+    </test>
+</suite>
