@@ -10,9 +10,7 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Modules {
-    ///////////////////////////////////
     
-
     public static int numOfClicks(String text) {
         String[] splited = text.split(" ");
         String first = splited[0];
