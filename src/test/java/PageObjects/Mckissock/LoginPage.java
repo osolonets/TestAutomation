@@ -16,7 +16,7 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(how = How.XPATH, using =  "//*[@id='menu-item-14']/a")
+        @FindBy(how = How.XPATH, using =  "//*[@id='menu-item-14']/a")
     public WebElement loginMainPage;
 
     @FindBy(how = How.XPATH, using =  "//*[@id='ng-app']/body/header/div/div[2]/nav[1]/ul/li[4]/a")
@@ -47,5 +47,13 @@ public class LoginPage {
         loginPage.password.sendKeys(UtilMckissock.getPASSWD());
         loginPage.btnLogin.click();
     }
-
+    public void login(WebDriver driver, LoginPage loginPage, String user, String passw) throws InterruptedException {
+        loginPage.loginMainPage.click();
+        Thread.sleep(3000);
+        loginPage.userName.clear();
+        loginPage.userName.sendKeys(user);
+        loginPage.password.clear();
+        loginPage.password.sendKeys(passw);
+        loginPage.btnLogin.click();
+    }
 }

@@ -19,15 +19,26 @@ public class BaseTest {
         Object[][] testData = ExcelUtility.getTestData("RegistrationTestData");
         return testData;
     }
-
-    @BeforeClass
+    @DataProvider(name = "CheckOutTestData")
+    public Object[][] checkOutTestData() throws Exception {
+        ExcelUtility.setExcelFile(UtilMckissock.getTestDataFilePath(), "CheckOutTest");
+        Object[][] testData = ExcelUtility.getTestData("CheckoutTestData");
+        return testData;
+    }
+    @DataProvider(name = "MainPageTestData")
+    public Object[][] mainPageTestData() throws Exception {
+        ExcelUtility.setExcelFile(UtilMckissock.getTestDataFilePath(), "MainPageTest");
+        Object[][] testData = ExcelUtility.getTestData("MainPageTestData");
+        return testData;
+    }
+    @BeforeSuite
     public void setUp() throws Exception {
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(UtilMckissock.getWaitTime(), TimeUnit.SECONDS);
     }
 
-    @AfterClass
+    @AfterSuite
     public void tearDown() throws Exception {
         //driver.quit();
     }

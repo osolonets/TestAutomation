@@ -67,8 +67,11 @@ public class RegistrationPage extends LoginPage {
     @FindBy(how= How.ID, using="ctl00_MasterContent_ucStepThree_textboxZipCode")
     public WebElement zipCode;
 
-    @FindBy(how= How.ID, using="ctl00_MasterContent_ucStepThree_textboxConfirmPassword")
+    @FindBy(how= How.ID, using="ctl00_MasterContent_ucStepThree_submitButton")
     public WebElement createAccountBtn;
+
+    @FindBy(how= How.XPATH, using="//*[@id='content']/div/h1")
+    public WebElement confirmRegistrationText;
 
 
 

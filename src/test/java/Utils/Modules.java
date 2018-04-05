@@ -8,9 +8,10 @@ import org.openqa.selenium.WebDriver;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.Random;
 
 public class Modules {
-    
+
     public static int numOfClicks(String text) {
         String[] splited = text.split(" ");
         String first = splited[0];
@@ -61,6 +62,10 @@ public class Modules {
     {
         return  "Test" + site + getCurrentDateAndTime();
 
+    }
+    public static int generateRamdom(int min, int max){
+        Random rand = new Random();
+        return rand.nextInt((max - min) + 1) + min;
     }
 
 }
